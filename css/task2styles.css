@@ -38,7 +38,7 @@ h1{
     display:inline-flex;
     font-family: 'Lucida Handwriting';
     font-size: 18px;
-    margin:0px 5px 0px 15px;
+    margin:0px 5px 0px 10px;
 }
 .h41{
      cursor:pointer;
@@ -67,6 +67,7 @@ h1{
     display:inline-flex;
 
 }
+
 .log{
     float:right;
     margin-right:100px;
@@ -125,7 +126,9 @@ p{
 .gplay{
    margin-left: 190px;
    border-radius: 10px;
-   margin-top:-5px;
+   margin-top:-15px;
+   
+   
 }
 .down{
     margin-top: -75px;
@@ -134,8 +137,9 @@ p{
 .dplay{
     margin-left: -15px;
     border-radius: 10px;
-    margin-top:-5px;
+    margin-top:-8px;
     font-size: 14px;
+    
 }
 .h45{
     font-family: Copperplate;
