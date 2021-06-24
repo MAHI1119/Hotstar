@@ -43,6 +43,13 @@ h1{
     margin-left:10px;
     padding: 2;
 }
+.code{
+    margin: 20px 0px 20px 20px;
+    font-size: 20px;
+    
+    
+}
+
 .kid{
     font-family: cursive;
     color:orange;
@@ -87,9 +94,55 @@ h1{
 .imge{
     width:100%;
     height: 400px;
-    margin:70px 0px 30px 0px;
+    margin:75px 0px 30px 0px;
     border-radius: 5px;
 }
+.slideshow-container {
+    max-width: 1300px;
+    margin: auto;
+}
+  
+  /* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    padding: 5px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+}
+  
+  /* Position the "next button" to the right */
+.next {
+    right: 0px;
+    
+}
+.prev{
+    left:0px;
+}
+  
+  /* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+      
 .box{
     height:240px;
     display:flex;
@@ -245,7 +298,7 @@ h5{
     margin-top:-5px;
     font-size: 12px;
 }
-@media (min-width:700px) and (max-width: 1280px)  {
+@media (min-width:700px) and (max-width: 1310px)  {
 ul{
     display: none;
     margin:10px;
@@ -254,6 +307,21 @@ ul{
     width:100%;
     height:250px;
     border-radius: 5px;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 37%;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+.prev{
+    left:0px;
+}
+.next{
+    right:0px;
 }
 .box{
     height:240px;
@@ -272,12 +340,13 @@ h1{
     display:none;
 }
 .sub{
-    font-size:16px;
+    font-size:14px;
     height:30px;
     width:fit-content;
     padding:5px;
     margin:20px 50px 0px 0px ;
     text-transform: uppercase;
+    font-weight:border;
     
 }   
 h5{
@@ -365,7 +434,8 @@ h5{
 ul{
     display:none;
 
-}  
+} 
+
 .search{
     display:none;
 } 
@@ -374,11 +444,16 @@ ul{
     height:230px;
     border-radius: 5px;
 }
+.code{
+    font-size: 16px;
+    margin: 20px 0px 20px 10px;
+}    
 h1{
-    margin:20px;
+    margin:15px;
     font-weight:lighter;
-    font-size: 18px;
+    font-size: 16px;
 }
+
 .log{
     display:none;
 } 
@@ -466,14 +541,44 @@ h5{
     overflow-x: auto;
     margin:10px 0px 0px 10px;
 }
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 33%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
 }
-
+.next{
+    right:0px;
+}
+}
+@media only screen and (width:411px){
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 24%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+    }
+}
 @media (min-width:295px) and (max-width:350px) {
 ul{
     display:none;
+} 
+.code{
+    font-size: 16px;
+    margin: 20px 0px 20px 5px;
 }    
 h1{
-    margin:20px;
+    margin:20px 10px;
     font-size:15px;
     font-weight: lighter;
 }  
@@ -484,11 +589,12 @@ h1{
     display: none;
 }
 .sub{
-    font-size:14px;
+    font-size:12px;
     height:30px;
     width:fit-content;
     padding:5px;
-    margin:20px 10px 0px 0px ;
+    margin:20px 0px 0px 0px ;
+    margin-left: -30px;
     text-transform: uppercase;
     
 } 
@@ -572,6 +678,17 @@ h5{
     overflow-x: auto;
     margin:10px 0px 0px 10px;
 }
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 26%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
 } 
 @media (min-width:70px) and (max-width:294px) {
 ul{
@@ -580,8 +697,12 @@ ul{
 .kids{
     display:none;
 }
+.code{
+    font-size: 16px;
+    margin: 20px 0px 20px 0px;
+}    
 h1{
-    margin:25px 7px;
+    margin:25px 4px;
     font-size:14px;
     font-weight: lighter;
 }  
@@ -682,8 +803,22 @@ h5{
     overflow-x: auto;
     margin:10px 0px 0px 5px;
 }
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 30%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+.prev{
+    left:0px;
+}
 }   
-@media screen and (width:1024px) {
+@media only screen and (width:1024px) {
 .header{
     width:100%;
     height:100px;
@@ -708,7 +843,7 @@ h1{
 .sub{
     width:180px;
     height:50px;
-    font-weight: bolder;
+    font-weight: lighter;
     font-size: 28px;
 }
 h5{
@@ -765,6 +900,34 @@ h5{
     font-family: Arial, Helvetica, sans-serif;
     font-size:18px;
 }
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 16%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+.imge{
+    margin:100px 0px 0px 0px;
+}
+}
+@media only screen and (width:768px)
+{
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 20%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+    }
 }
 
 
