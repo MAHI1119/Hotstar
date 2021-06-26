@@ -38,7 +38,7 @@ h1{
     color:white;
     display:inline-flex;
     font-size:18px; 
-    margin:20px 0px 5px 30px;
+    margin:20px 0px 5px 5px;
     
 }
 #bars{
@@ -100,6 +100,7 @@ h1{
 .slideshow-container {
     max-width: 1300px;
     margin: auto;
+    
 }
 .prev, .next {
     cursor: pointer;
@@ -152,7 +153,7 @@ h1{
    font-size: 20px;
    color:white;
    list-style: none;
-   margin-left:10px;
+   margin-left:5px;
  }     
 .box{
     height:240px;
@@ -170,6 +171,7 @@ h3{
 .box::-webkit-scrollbar{
     width:0px;
 }
+
 .dropdown {
     position: relative;
     display: inline-block;
@@ -551,6 +553,7 @@ h5{
     }
     
 }
+
 @media (min-width:360px) and (max-width:700px) {
 ul{
     display:none;
@@ -567,7 +570,7 @@ ul{
 }
    
 h1{
-    margin:10px;
+    margin:3px;
     font-weight:bolder;
     font-size: 16px;
     font-family: Lucida Handwriting;
@@ -664,7 +667,7 @@ h5{
 .prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 25%;
+    top: 30%;
     width: auto;
     padding: 16px;
     margin-top: -22px;
