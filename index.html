@@ -8,8 +8,22 @@
 
     <body>
         <div class="header">
+            <div id="mySidepanel" class="sidepanel">
+                <a href="#" class="closebtn" onclick="closeNav()">×</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Channels</a>
+            </div>
 
-            <span class="code">&#9776;</span>
+            <button class="openbtn" onclick="openNav()">☰</button>
+            <div class="dropdown3">
+                <li class="mmenu">☰</li>
+                <div class="dropdown-content3">
+                    <a class="a1" href="#">Channels</a>
+                    <a class="a1" href="#">About</a>
+                    <a class="a1" href="#">Languages</a>
+                </div>
+            </div>
             <h1> <span class="head">Disney Hotstar</span></h1>
             <ul>
                 <div class="dropdown">
@@ -72,7 +86,6 @@
             <div class="mySlides fade">
                 <img src="homeimages/moviecover1.jpeg" class="imge">
             </div>
-
             <div class="mySlides fade">
                 <img src="homeimages/moviecover2.jpeg" class="imge">
             </div>
@@ -82,7 +95,6 @@
             <div class="mySlides fade">
                 <img src="homeimages/moviecover4.jpeg" class="imge">
             </div>
-
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
@@ -187,17 +199,21 @@
             function showSlides(n) {
                 var i;
                 var slides = document.getElementsByClassName("mySlides");
-                var dots = document.getElementsByClassName("dot");
                 if (n > slides.length) { slideIndex = 1 }
                 if (n < 1) { slideIndex = slides.length }
                 for (i = 0; i < slides.length; i++) {
                     slides[i].style.display = "none";
                 }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                }
                 slides[slideIndex - 1].style.display = "block";
-                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+        <script>
+            function openNav() {
+                document.getElementById("mySidepanel").style.width = "250px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidepanel").style.width = "0";
             }
         </script>
     </body>
